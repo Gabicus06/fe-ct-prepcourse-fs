@@ -6,6 +6,21 @@ function combine(str1, str2, str3) {
    // combine("abc", "", "123") == "a1b2c3"
    // combine("abc", "12345", "") == "a1b2c345"
    // combine("abc", "12345", "67") == "a16b27c345"
+
+   var word = ""
+   var max = Math.max(str1.length, str2.length, str3.length)
+   
+   for (i=0; i<max; i++ ){
+      if(str1.charAt(i) != null){
+         word = word + str1.charAt(i)
+      }if(str2.charAt(i) != null) {
+         word = word + str2.charAt(i)
+      }if(str3.charAt(i) != null) {
+         word = word + str3.charAt(i)
+      }
+      
+   }
+   return word
 }
 
 module.exports = combine;
