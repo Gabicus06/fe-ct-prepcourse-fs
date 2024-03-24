@@ -6,7 +6,7 @@ function continueStatement(num) {
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
   var a = []
-  for (i=1; i<11; i++){
+  for (i=1; i<10; i++){
     var b = num+(2*i)
     if(i== 5){
       continue
